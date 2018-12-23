@@ -246,8 +246,8 @@ public @interface Profile {
 1. 实现自动装配的类
 2. 在`META-INF/spring.factories`文件中配置第一步中的类
 3. `@EnableAutoConfiguration`注解激活配置
-
 下面以`User`模块的自动装配为例，来介绍具体的实现步骤
+
 #### 实现装配类`UserAutoConfiguration`
 这里用到了前面介绍的@Enable模块装配和条件装配
 ``` java
