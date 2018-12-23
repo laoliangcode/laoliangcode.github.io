@@ -20,15 +20,6 @@ public @interface Service {
 	String value() default "";
 }
 ```
-​	下面是spring中常用的模式注解
-
-| spring注解       | 使用场景           | 起始版本 |
-| ---------------- | ------------------ | -------- |
-| `@Repository`    | 数据仓储模式注解   | 2.0      |
-| `@Component`     | 通用组件模式注解   | 2.5      |
-| `@Service`       | 服务模式注解       | 2.5      |
-| `@Controller`    | Web 控制器模式注解 | 2.5      |
-| `@Configuration` | 配置类模式注解     | 3.0      |
 ### 装配方式
 ​	spring中通过配置扫描的包 ，就能扫描到注解的组件，有两种配置的方式：
 #### XML配置
