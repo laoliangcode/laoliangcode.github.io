@@ -7,6 +7,7 @@ keywords: Spring Boot,自动装配
 ---
 ​	
     spring boot能够根据依赖的jar包自动配置spring boot的应用，例如： 如果类路径中存在`DispatcherServlet`类，就会自动配置springMvc相关的Bean。spring boot的自动装配来源于spring的装配，功能也是随时spring的不断升级不断完善的，spring boot正是在spring的基础上实现的自动装配。
+
 ## spring模式注解装配
 ### 模式注解介绍
 ​	模式注解是应用程序中用来标注组件的注解，例如：`@Repository`是spring框架中用来标注数据访问对象（DAO）的注解。`@Component`是用来标注被spring管理的通用的组件，`@Component`标注的类都可以被spring容器扫描到。并且任何标注`@Component`元注解的的注解也能被spring扫描到，比如`@Service`
