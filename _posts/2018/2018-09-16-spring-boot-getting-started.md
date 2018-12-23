@@ -81,17 +81,30 @@ public class Application {
 }
 ```
 
-接下来使用maven打包，`cd 你创建的目录`，输入命令：
+## 程序启动
+### jar包启动
+- maven打包
+
+    cd到你创建的目录，输入命令：
 
 ```
 mvn package
 ```
 
-这样会在`target`目录下生成一个jar包`springboot-demo-first-0.0.1-SNAPSHOT.jar`
+- 使用java命令运行jar包
+
+    这样会在`target`目录下生成一个jar包`springboot-demo-first-0.0.1-SNAPSHOT.jar`
 使用命令直接运行程序
 
 ```
 java -jar springboot-demo-first-0.0.1-SNAPSHOT.jar
+```
+
+### maven命令启动
+   cd到你创建的目录,输入命令：
+
+```
+mvn spring-boot:run
 ```
 
 在浏览器中输入网址http://localhost:8080/，就可以访问到我们得第一个springboot程序了，是不是超级简单。

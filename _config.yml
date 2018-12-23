@@ -11,13 +11,13 @@ subtitle: 分享技术，记录代码生活
 name: 老亮侃码 
 email: laoliangcode@163.com
 description: 本站是老亮的技术分享博客。内容涵盖Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: laoliangcode,老亮侃码,老亮,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+keywords: laoliangcode,老亮侃码,老亮,Spring,Spring Boot,Spring Cloud开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,
 encoding: "utf-8"
 favicon: favicon.png 
 
 repository: laoliangcode/laoliangcode.github.io
 github_url: https://github.com/laoliangcode
-cnblog_url: https://www.cnblogs.com/jular
+cnblog_url: https://www.cnblogs.com/laoliangcode
 url: https://laoliangcode.github.io
 enforce_ssl: laoliangcode.com
 
