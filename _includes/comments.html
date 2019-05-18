@@ -82,6 +82,7 @@
     {% when 'gitalk' %}
         <div id="gitalk-container"></div>
         <script src="/assets/js/gitalk.min.js"></script>
+        <script src="/assets/js/md5.min.js"></script>
         <script>
         var gitalk = new Gitalk({
             id: md5('{{ page.url }}'),
