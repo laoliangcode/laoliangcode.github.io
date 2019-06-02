@@ -65,6 +65,10 @@ navs:
     href: /spring-boot.html
     label: Spring-Boot
 
+  -
+    href: /spring-cloud.html
+    label: Spring-Cloud
+
 #  -
 #   href: /spring-cloud.html
 #    label: Spring-Cloud
