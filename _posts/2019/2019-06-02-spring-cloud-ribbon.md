@@ -6,7 +6,7 @@ tags: [springcloud]
 keywords: springcloud,ribbon
 ---
 
-    本文从源码层面介绍下原生ribbon以及与springcloud集成后的执行流程。
+本文从源码层面介绍下原生ribbon以及与springcloud集成后的执行流程。
 
 ## 1 原生ribbon执行流程解析
 ### 1.1 ribbon关键组件
