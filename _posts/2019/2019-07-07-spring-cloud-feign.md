@@ -92,7 +92,7 @@ sayHello方法解析成`MethodMetadata`后的数据如下：
  ![](http://image.laoliangcode.com/springcloud/feign/RequestTemplate.jpg)
  
  ### 1.4 原生feign集成ribbon执行流程
- feign集成ribbon关键是把Client组件替换成了跟ribbon集成的Client，这个Client名叫`
+feign集成ribbon关键是把Client组件替换成了跟ribbon集成的Client，这个Client名叫`
 RibbonClient`，这个类在feign的feign-ribbon工程下。在这个Client中，会创建ribbon的Client LBClient，执行原生的ribbon获取服务地址。获取到服务地址后，最后还是调用feign默认的Client，发送http请求。
 具体执行流程如下图所示：
 
@@ -120,6 +120,7 @@ spring cloud包装了一个Targeter组件，内部还是调用了原生feign用�
 
 ### 2.2 spring cloud集成feign执行流程
 spring cloud跟feign集成，默认是集成了ribbon，跟原生feign集成ribbon的原理几乎一样，所用到的类跟feign-ribbon工程下类差不多，为了跟spring容器结合，spring cloud基本上是把一些关键类复制了一份，改了一下名字，并把里面用到一些组件从spring容器中去获取，下表是这些类的对应关系：
+
 | feign原生类名 | spring cloud类名 | 说明 |
 | --- | --- | --- |
 | RibbonClient | LoadBalancerFeignClient | feign client组件 |
