@@ -69,7 +69,7 @@ public static void main(String[] args) {
  整个执行流程如下图所示：
  ![](http://image.laoliangcode.com/springcloud/hystrix/%E5%8E%9F%E7%94%9Fhystrix%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg)
  
- ### 1.3 @HystrixCommand注解方式执行流程
+### 1.3 @HystrixCommand注解方式执行流程
  hystrix还支持注解的方式，通过在方法上加上@HystrixCommand注解，aspectj框架就会通过aop来拦截请求，执行入口类是HystrixCommandAspect，这个类在hystrix的hystrix-javanica包中。其中定义两个Pointcut，分别用于两张功能。
  ``` java
 @Pointcut("@annotation(com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand)")
